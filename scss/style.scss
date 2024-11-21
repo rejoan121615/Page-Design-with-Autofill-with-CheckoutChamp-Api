@@ -1,10 +1,10 @@
 $c-yellow: #f79e1b;
 // screen
-$screen-sm: 640px;
-$screen-md: 768px;
-$screen-lg: 1024px;
-$screen-xl: 1280px;
-$screen-2xl: 1536px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
 
 $f-dm-sans: "DM Sans", sans-serif;
 
@@ -23,6 +23,23 @@ $f-dm-sans: "DM Sans", sans-serif;
   font-style: normal;
 }
 
+%flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-center {
+  @extend %flex;
+  justify-content: center;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
 .order-status {
   font-size: 13px;
   font-weight: 400;
@@ -30,11 +47,43 @@ $f-dm-sans: "DM Sans", sans-serif;
   padding: 6px;
   text-align: center;
   background-color: $c-yellow;
-  @include resp($screen-lg) {
+  @include resp($lg) {
     padding: 10px;
   }
 
   .order-timeout {
     font-weight: 700;
+  }
+}
+
+.brands {
+  @extend %flex;
+  padding: 15px 20px;
+  gap: 10px;
+  @include resp(425px) {
+    gap: 15px;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.23px;
+    flex: 1;
+    @include resp($lg) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+  .king-of {
+    width: 58px;
+    @include resp($lg) {
+      order: -1;
+      width: 82px;
+    }
+  }
+  .cards-logo {
+    width: 115px;
+    @include resp($lg) {
+      width: 138px;
+    }
   }
 }
