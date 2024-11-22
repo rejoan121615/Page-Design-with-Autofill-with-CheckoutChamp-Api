@@ -135,10 +135,30 @@
     <form class="details-form">
       <div class="shipping-details form-section">
         <h2 class="section-title">Shipping details</h2>
-        <div class="input-section">
-          <div class="input-group">
-            <label for="firstName">First Name</label>
-            <input type="text" value="" placeholder="John">
+        <div class="input-lists">
+          <div class="input-group first-name">
+            <label for="firstName">First name</label>
+            <input type="text" value="" id="firstName" placeholder="John">
+          </div>
+          <div class="input-group last-name">
+            <label for="lastName">Last name</label>
+            <input type="text" value="" id="lastName" placeholder="Smith">
+          </div>
+          <div class="input-group email-address">
+            <label for="emailAddress">Email address</label>
+            <input type="text" value="" id="emailAddress" placeholder="john@email.com">
+          </div>
+          <div class="input-group phone-number">
+            <label for="phoneNumber">Phone number</label>
+            <input type="text" value="" id="phoneNumber" placeholder="+44">
+          </div>
+          <div class="input-group shipping-address">
+            <label for="shippingAddress">Shipping address</label>
+            <input type="text" value="" id="shippingAddress" placeholder="Start typing your address">
+          </div>
+          <div class="input-group keep-update">
+            <input type="checkbox" value="" id="keepUpdated">
+            <label for="keepUpdated">Keep me updated on special offers</label>
           </div>
         </div>
       </div>
