@@ -156,9 +156,28 @@
             <label for="shippingAddress">Shipping address</label>
             <input type="text" value="" id="shippingAddress" placeholder="Start typing your address">
           </div>
-          <div class="input-group keep-update">
+          <div class="select-group keep-update">
             <input type="checkbox" value="" id="keepUpdated">
-            <label for="keepUpdated">Keep me updated on special offers</label>
+            <label for="keepUpdated" class="title">Keep me updated on special offers</label>
+          </div>
+        </div>
+      </div>
+      <div class="shipping-method form-section">
+        <h2 class="section-title">Shipping Method</h2>
+        <div class="input-radio">
+          <div class="radio-group free">
+            <div class="radio-wrap">
+              <input name="shipping-method" type="radio" value="free-shipping" id="freeShipping" name="free-shipping" checked>
+              <label for="freeShipping" class="title">Free Shipping</label>
+            </div>
+            <div class="label">Free</div>
+          </div>
+          <div class="radio-group fed-ex">
+            <div class="radio-wrap">
+              <input name="shipping-method" type="radio" value="fed-ex" id="fedEx">
+              <label for="fedEx" class="title">FedEx Express Shipping</label>
+            </div>
+            <div class="label">£5.00</div>
           </div>
         </div>
       </div>
