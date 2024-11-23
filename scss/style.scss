@@ -23,6 +23,7 @@ $f-dm-sans: "DM Sans", sans-serif;
   font-family: $f-dm-sans;
   font-optical-sizing: auto;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 %flex {
@@ -89,7 +90,8 @@ input[type="radio"]:checked::after {
   height: 100%;
 }
 
-label, .label {
+label,
+.label {
   font-size: 12px;
   font-weight: 700;
   line-height: 15.62px;
@@ -471,14 +473,86 @@ aside {
   }
 
   .shipping-method {
-    
     .free {
       .label {
-        color: #82BF00;
+        color: #82bf00;
       }
     }
     .fed-ex {
-      .label {}
+      .label {
+      }
+    }
+  }
+
+  .payment-method {
+    .credit-card {
+      border-bottom: 0px;
+      .card-icons {
+        img {
+          width: 28px;
+          &:first-child {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .card-info-wrap {
+      padding: 0px 10px 10px 10px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    .card-input-group {
+      position: relative;
+      // overflow: hidden;
+      input {
+        padding-left: 35px;
+      }
+      img {
+        width: 15px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+    }
+
+    .card-number {
+      grid-column: 1 / -1;
+    }
+
+    .card-cvv {
+      input {
+        width: 100%;
+        text-align: right;
+        text-align: right;
+        padding-right: 10px;
+        border-radius: 0px;
+        border-radius: 5px;
+      }
+    }
+
+    .card-date {
+      flex-flow: row wrap;
+      align-items: center;
+      border: 1px solid $c-gray;
+      border-radius: 5px;
+      
+      input {
+        border-radius: 5px;
+        border-color: transparent;
+        padding: 0px;
+        padding-left: 35px;
+        flex: 1;
+        width: 40%;
+        text-align: right;
+        padding-right: 10px;
+      }
+      .card-date-month {
+        border-radius: 0px;
+        border-right: 1px solid $c-gray;
+        height: 20px;
+      }
     }
   }
 }
