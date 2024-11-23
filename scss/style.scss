@@ -537,7 +537,7 @@ aside {
       align-items: center;
       border: 1px solid $c-gray;
       border-radius: 5px;
-      
+
       input {
         border-radius: 5px;
         border-color: transparent;
@@ -552,6 +552,45 @@ aside {
         border-radius: 0px;
         border-right: 1px solid $c-gray;
         height: 20px;
+      }
+    }
+  }
+
+  .submit {
+    margin-top: 15px;
+    .privacy-policy {
+      color: #0000007a;
+      font-size: 11px;
+      line-height: 14.3px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .submit-btn {
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20.83px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+      color: white;
+      background-color: $c-orange;
+    }
+
+    .security {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 14.32px;
+      text-align: center;
+
+      .icon {
+        width: 12px;
+        margin-right: 5px;
       }
     }
   }

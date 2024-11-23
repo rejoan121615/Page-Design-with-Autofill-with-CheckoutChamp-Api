@@ -199,34 +199,46 @@
           </div>
         </div>
       </div>
-      <div class="payment-method form-section">
-        <h2 class="section-title">Payment method</h2>
-        <div class="input-radio">
-          <div class="radio-group credit-card">
-            <div class="radio-wrap">
-              <input name="payment-method" type="radio" value="credit-card" id="creditCard" checked>
-              <label for="creditCard" class="title">Credit card</label>
+      <div class="form-section">
+        <div class="payment-method">
+          <h2 class="section-title">Payment method</h2>
+          <div class="input-radio">
+            <div class="radio-group credit-card">
+              <div class="radio-wrap">
+                <input name="payment-method" type="radio" value="credit-card" id="creditCard" checked>
+                <label for="creditCard" class="title">Credit card</label>
+              </div>
+              <div class="card-icons">
+                <img src="./image/logo/visa-bw.png" alt="visa card icon">
+                <img src="./image/logo/mastercard-bw.png" alt="master card icon">
+              </div>
             </div>
-            <div class="card-icons">
-              <img src="./image/logo/visa-bw.png" alt="visa card icon">
-              <img src="./image/logo/mastercard-bw.png" alt="master card icon">
+            <div class="card-info-wrap">
+              <div class="input-group card-input-group card-number">
+                <input type="number" placeholder="Card number" value="number" name="card-number">
+                <img src="./image/logo/card-number-icon.png" alt="card number icon">
+              </div>
+              <div class="input-group card-input-group card-date">
+                <img src="./image/logo/card-date-icon.png" alt="card date icon">
+                <input type="number" placeholder="MM" value="number" name="card-month" class="card-date-month">
+                <input type="number" placeholder="YYYY" value="number" name="card-year" class="card-date-year">
+              </div>
+              <div class="input-group card-input-group card-cvv">
+                <input type="number" placeholder="CVV" value="" name="cvv-number">
+                <img src="./image/logo/card-cvv-icon.png" alt="card number icon">
+              </div>
             </div>
           </div>
-          <div class="card-info-wrap">
-            <div class="input-group card-input-group card-number">
-              <input type="number" placeholder="Card number" value="number" name="card-number">
-              <img src="./image/logo/card-number-icon.png" alt="card number icon">
-            </div>
-            <div class="input-group card-input-group card-date">
-              <img src="./image/logo/card-date-icon.png" alt="card date icon">
-              <input type="number" placeholder="MM" value="number" name="card-month" class="card-date-month">
-              <input type="number" placeholder="YYYY" value="number" name="card-year" class="card-date-year">
-            </div>
-            <div class="input-group card-input-group card-cvv">
-              <input type="number" placeholder="CVV" value="" name="cvv-number">
-              <img src="./image/logo/card-cvv-icon.png" alt="card number icon">
-            </div>
-          </div>
+
+        </div>
+        <div class="submit">
+          <p class="privacy-policy title">"By clicking “Complete Secure Purchase” below,
+            I agree to the Terms of Sale and Privacy Policy.</p>
+          <button class="submit-btn" type="submit">Complete Secure Purchase</button>
+          <p class="security">
+            <img class="icon" src="./image/logo/lock-icon.png" alt="Lock icon">
+            Safe transactions guaranteed, secured over SSL
+          </p>
         </div>
       </div>
     </form>
