@@ -47,7 +47,7 @@ input {
   height: 33px;
   border-radius: 4px;
   @include resp($lg) {
-    height: 48px;
+    height: 50px;
     font-size: 13px;
     line-height: 17px;
     padding-left: 20px;
@@ -117,6 +117,9 @@ label,
 .select-group {
   height: 35px;
   @extend %flex;
+  @include resp($lg) {
+    height: 50px;
+  }
   .radio-wrap {
     @extend %flex;
     align-items: center;
@@ -129,6 +132,11 @@ label,
       height: 15px;
       border-radius: 50%;
       margin-right: 10px;
+      @include resp($lg) {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+      }
     }
   }
   .title {
@@ -138,6 +146,10 @@ label,
     line-height: 14.3px;
     font-weight: 400;
     flex: 1;
+    @include resp($lg) {
+      font-size: 13px;
+      line-height: 17px;
+    }
   }
 }
 
@@ -145,6 +157,9 @@ label,
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 1px solid $c-gray;
+  @include resp($lg) {
+    padding-left: 17px;
+  }
   &:last-child {
     border-bottom: none;
   }
@@ -193,34 +208,36 @@ aside {
 }
 
 .brands {
-  @extend %flex;
   padding: 15px 20px;
-  gap: 10px;
-  @include resp(425px) {
-    gap: 15px;
-  }
-  .title {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18.23px;
-    flex: 1;
-    @include resp($lg) {
-      font-size: 26px;
-      line-height: 34px;
-      text-align: center;
+  .container {
+    @extend %flex;
+    gap: 10px;
+    @include resp(425px) {
+      gap: 15px;
     }
-  }
-  .king-of {
-    width: 58px;
-    @include resp($lg) {
-      order: -1;
-      width: 82px;
+    .title {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18.23px;
+      flex: 1;
+      @include resp($lg) {
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+      }
     }
-  }
-  .cards-logo {
-    width: 115px;
-    @include resp($lg) {
-      width: 138px;
+    .king-of {
+      width: 58px;
+      @include resp($lg) {
+        order: -1;
+        width: 82px;
+      }
+    }
+    .cards-logo {
+      width: 115px;
+      @include resp($lg) {
+        width: 138px;
+      }
     }
   }
 }
@@ -239,6 +256,9 @@ aside {
       background-color: transparent;
       border: none;
       padding: 0;
+      @include resp($xl) {
+        display: none;
+      }
       img {
         width: 12px;
       }
@@ -251,10 +271,21 @@ aside {
   padding-top: 20px;
   padding-bottom: 28px;
 
+  @include resp($lg) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   // accordion
 
   .accordion-body {
     padding-top: 5px;
+    @include resp($lg) {
+      padding-top: 30px
+    }
+    .product-list {
+
+    }
   }
 
   // products
@@ -263,6 +294,9 @@ aside {
     column-gap: 12px;
     margin-bottom: 10px;
     padding-top: 10px;
+    @include resp($lg) {
+      column-gap: 24px;
+    }
     &:last-child {
       margin-bottom: 0px;
     }
@@ -271,6 +305,10 @@ aside {
       position: relative;
       width: 55px;
       height: 55px;
+      @include resp($lg) {
+        width: 70px;
+        height: 70px;
+      }
       .product-badge {
         width: 17px;
         height: 17px;
@@ -284,6 +322,12 @@ aside {
         position: absolute;
         top: -8px;
         right: -8px;
+        @include resp($lg) {
+          font-size: 11px;
+          line-height: 14px;
+          width: 20px;
+          height: 20px;
+        }
       }
       .img-wrap {
         border-radius: 3px;
@@ -324,6 +368,9 @@ aside {
   .coupon-code {
     @extend %flex;
     margin-top: 12px;
+    @include resp($lg) {
+      margin-top: 35px;
+    }
     input,
     button {
       @extend %flex;
@@ -352,6 +399,10 @@ aside {
       background-color: #000000;
       color: white;
       font-weight: 700;
+      @include resp($lg) {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -360,6 +411,11 @@ aside {
     padding-bottom: 18px;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 18px;
+    @include resp($lg) {
+      margin-top: 24px;
+      padding-bottom: 28px;
+      margin-bottom: 35px;
+    }
     .summary-item {
       @extend %flex;
       margin-bottom: 14px;
@@ -371,6 +427,10 @@ aside {
         font-size: 12px;
         line-height: 15.62px;
         text-align: left;
+        @include resp($lg) {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
       h3 {
         font-weight: 700;
@@ -399,6 +459,11 @@ aside {
         color: #ec5e2a;
       }
     }
+    .sales-tax {
+      @include resp($lg) {
+        margin-bottom: 22px;
+      }
+    }
   }
 
   .gurantee {
@@ -406,12 +471,19 @@ aside {
       @extend %flex;
       align-items: flex-start;
       margin-bottom: 15px;
+      @include resp($lg) {
+        margin-bottom: 34px;
+      }
       &:last-child {
         margin-bottom: 0px;
       }
       .gurantee-img {
         width: 50px;
         margin-right: 12px;
+        @include resp($lg) {
+          width: 72px;
+          margin-right: 22px;
+        }
       }
       .gurantee-info {
         flex: 1;
@@ -425,6 +497,10 @@ aside {
           font-size: 11px;
           line-height: 14.3px;
           color: #666666;
+          @include resp($lg) {
+            font-size: 13px;
+            line-height: 17px;
+          }
         }
       }
     }
@@ -435,20 +511,43 @@ aside {
   padding: 0px;
   margin-top: 15px;
 
+  @include resp($xl) {
+    margin-top: 0px;
+  }
+
   .form-section {
     background-color: white;
     padding: 25px 20px;
     margin-bottom: 15px;
+    @include resp($lg) {
+      margin-bottom: 20px;
+    }
+    @include resp($xl) {
+      border-radius: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      box-shadow: 0px 18px 31.2px 0px #0000001A;
+      
+    }
     .section-title {
       font-weight: 500;
       font-size: 18px;
       line-height: 23.5px;
       margin-bottom: 12px;
+      @include resp($lg) {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 17px;
+      }
     }
   }
 
   // shipping details
   .shipping-details {
+    @include resp($lg) {
+      padding-top: 35px;
+      padding-bottom: 45px;
+    }
     label {
       margin-bottom: 5px;
     }
@@ -457,6 +556,10 @@ aside {
       gap: 12px 10px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
+      @include resp($lg) {
+        gap: 20px 25px;
+        grid-template-rows: repeat(3, 1fr) 20px;
+      }
     }
     .shipping-address {
       grid-column: 1 / -1;
@@ -466,6 +569,11 @@ aside {
       flex-flow: row wrap;
       align-items: center;
       column-gap: 10px;
+      @include resp($lg) {
+        font-size: 15px;
+        align-items: flex-start;
+        height: initial;
+      }
 
       label {
         // margin-bottom: 0px;
@@ -479,6 +587,10 @@ aside {
   }
 
   .shipping-method {
+    @include resp($lg) {
+      padding-top: 45px;
+      padding-bottom: 55px;
+    }
     .free {
       .label {
         color: #82bf00;
@@ -490,7 +602,26 @@ aside {
     }
   }
 
+  .bill-details {
+    @include resp($lg) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
   .payment-method {
+    @include resp($lg) {
+      padding-top: 55px;
+      padding-bottom: 45px;
+    }
+    .reviews {
+      @include resp($xl) {
+        display: none;
+      }
+    }
+  }
+
+  .card-payment {
     .credit-card {
       border-bottom: 0px;
       .card-icons {
@@ -507,6 +638,11 @@ aside {
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 10px;
+      @include resp($lg) {
+        padding: 15px;
+        padding-top: 0px;
+        gap: 10px 15px;
+      }
     }
 
     .card-input-group {
@@ -514,12 +650,19 @@ aside {
       // overflow: hidden;
       input {
         padding-left: 35px;
+        @include resp($lg) {
+          padding-left: 45px;
+        }
       }
       img {
         width: 15px;
         position: absolute;
         left: 10px;
         top: 10px;
+        @include resp($lg) {
+          left: 16px;
+          top: 17px;
+        }
       }
     }
 
@@ -570,6 +713,10 @@ aside {
       line-height: 14.3px;
       font-weight: 400;
       text-align: center;
+      @include resp($lg) {
+        font-size: 13px;
+        line-height: 17px;
+      }
     }
     .submit-btn {
       border: none;
@@ -586,6 +733,13 @@ aside {
       width: 100%;
       color: white;
       background-color: $c-orange;
+      @include resp($lg) {
+        margin-top: 22px;
+        margin-bottom: 20px;
+        height: 70px;
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
 
     .security {
@@ -593,6 +747,11 @@ aside {
       font-weight: 400;
       line-height: 14.32px;
       text-align: center;
+
+      @include resp($lg) {
+        font-size: 13px;
+        line-height: 17px;
+      }
 
       .icon {
         width: 12px;
@@ -608,11 +767,18 @@ aside {
     padding: 15px 20px;
     @extend %flex;
     justify-content: flex-start;
+    @include resp($lg) {
+      padding: 25px 30px;
+    }
     img {
       width: 75px;
       margin-right: 10px;
       @include resp($sm) {
         margin-right: 15px;
+      }
+      @include resp($lg) {
+        width: 100px;
+        margin-right: 20px;
       }
     }
 
@@ -622,11 +788,19 @@ aside {
         font-weight: 500;
         line-height: 18.23px;
         margin-bottom: 5px;
+        @include resp($lg) {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
       p {
         font-size: 10px;
         font-weight: 400;
         line-height: 13.02px;
+        @include resp($lg) {
+          font-size: 13px;
+          line-height: 17px;
+        }
         span {
           font-weight: 700;
         }
@@ -667,6 +841,9 @@ aside {
     }
     .review-slide {
       padding: 20px 15px;
+      @include resp($lg) {
+         padding: 25px 30px;
+      }
       .star-list {
         display: flex;
         align-items: flex-start;
@@ -674,6 +851,7 @@ aside {
         column-gap: 5px;
         .stars {
           width: 10px;
+          width: 17px;
           img {
             display: inline-block;
             width: 100%;
@@ -698,19 +876,58 @@ aside {
           line-height: 15.62px;
           font-weight: 500;
           margin-right: 8px;
+          @include resp($lg) {
+            font-size: 14px;
+            line-height: 18.3px;
+          }
         }
 
         .verified {
           font-size: 10px;
           font-weight: 400;
           line-height: 13.02px;
-          color: #86B81B;
+          color: #86b81b;
+          @include resp($lg) {
+            font-size: 12px;
+            line-height: 15px;
+          }
           img {
             width: 10px;
             margin-right: 3px;
+            @include resp($lg) {
+              width: 14px;
+            }
           }
         }
       }
+    }
+  }
+}
+
+// large screen layouts
+.content-wrap {
+  @include resp($xl) {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 120px auto;
+    .brands {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
+    .order-summary {
+      grid-column: 2 / span 1;
+      grid-row: 1 / -1;
+    }
+    .checkout-container {
+      grid-column: 1 / span 1;
+      grid-row: 2 / -1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

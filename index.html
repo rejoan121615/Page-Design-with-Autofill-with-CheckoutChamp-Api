@@ -17,289 +17,298 @@
 <body>
   <header class="order-status">Your order has been reserved for <span class="order-timeout">14:28</span> minutes!
   </header>
-  <aside class="brands">
-    <h3 class="title">Safe & Secure Checkout</h3>
-    <div class="king-of">
-      <img src="./image/logo/king-of-kicks.png" alt="king of kicks logo">
-    </div>
-    <div class="cards-logo">
-      <img src="./image/logo/card-logo.png" alt="visa mastercard logo">
-    </div>
-  </aside>
-  <aside class="order-summary">
-    <div class="order-wrap">
-      <div class="accordion">
-        <div class="accordion-head">
-          <h3 class="order-title accordion-label ">Order Summary</h3>
-          <button>
-            <img src="./image/logo/bottom-icon.png" alt="accordion bottom icon">
-          </button>
+  <div class="content-wrap">
+    <aside class="brands">
+      <div class="container">
+        <h3 class="title">Safe & Secure Checkout</h3>
+        <div class="king-of">
+          <img src="./image/logo/king-of-kicks.png" alt="king of kicks logo">
         </div>
-        <div class="accordion-body">
-          <div class="product-list">
-            <!-- product item  -->
-            <div class="product-item">
-              <div class="product-img">
-                <div class="product-badge">2</div>
-                <div class="img-wrap">
-                  <img src="./image/products/product-image.png" alt="monochrome tracksuit">
-                </div>
-              </div>
-              <div class="product-details">
-                <div class="product-info">
-                  <h3>Monochrome Tracksuit</h3>
-                  <p>XS / Pink</p>
-                </div>
-                <div class="product-price">
-                  <p>£19.95</p>
-                  <h3>£17.95</h3>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-img">
-                <div class="product-badge">2</div>
-                <div class="img-wrap">
-                  <img src="./image/products/product-image.png" alt="monochrome tracksuit">
-                </div>
-              </div>
-              <div class="product-details">
-                <div class="product-info">
-                  <h3>Monochrome Tracksuit</h3>
-                  <p>XS / Pink</p>
-                </div>
-                <div class="product-price">
-                  <p>£19.95</p>
-                  <h3>£17.95</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="coupon-code">
-            <input type="text" class="coupon-field" placeholder="Discount code or gift card">
-            <button class="apply-btn " type="button">Apply</button>
-          </div>
-          <div class="summary">
-            <div class="summary-item">
-              <p>Subtotal</p>
-              <h3>£35.90</h3>
-            </div>
-            <div class="summary-item saving-item">
-              <p>Savings</p>
-              <h3>-£XX.XX</h3>
-            </div>
-            <div class="summary-item">
-              <p>Shipping</p>
-              <h3>FREE</h3>
-            </div>
-            <div class="summary-item">
-              <p>Sales tax</p>
-              <h3>£0.00</h3>
-            </div>
-            <div class="summary-item total-item">
-              <h1>Total</h1>
-              <div class="total-info">
-                <p>GBP</p>
-                <h1>£35.90</h1>
-              </div>
-            </div>
-
-          </div>
-          <div class="gurantee">
-            <div class="gurantee-item">
-              <div class="gurantee-img">
-                <img src="./image/logo/lifetime.png" alt="lifetime logo">
-              </div>
-              <div class="gurantee-info">
-                <h3>Lifetime Guarantee</h3>
-                <p>At our company, we take great pride in the quality of our products. That's why we confidently offer a
-                  lifetime year warranty on all our items.</p>
-              </div>
-            </div>
-            <div class="gurantee-item">
-              <div class="gurantee-img">
-                <img src="./image/logo/30-days-satisfaction.png" alt="30 days satisfaction logo">
-              </div>
-              <div class="gurantee-info">
-                <h3>Lifetime Guarantee</h3>
-                <p>At our company, we take great pride in the quality of our products. That's why we confidently offer a
-                  lifetime year warranty on all our items.</p>
-              </div>
-            </div>
-          </div>
+        <div class="cards-logo">
+          <img src="./image/logo/card-logo.png" alt="visa mastercard logo">
         </div>
       </div>
-    </div>
-  </aside>
-  <!-- user input forms  -->
-  <aside class="checkout-container">
-    <form class="details-form">
-      <div class="shipping-details form-section">
-        <h2 class="section-title">Shipping details</h2>
-        <div class="input-lists">
-          <div class="input-group first-name">
-            <label for="firstName">First name</label>
-            <input type="text" value="" id="firstName" placeholder="John">
+    </aside>
+    <aside class="order-summary">
+      <div class="order-wrap">
+        <div class="accordion">
+          <div class="accordion-head">
+            <h3 class="order-title accordion-label ">Order Summary</h3>
+            <button>
+              <img src="./image/logo/bottom-icon.png" alt="accordion bottom icon">
+            </button>
           </div>
-          <div class="input-group last-name">
-            <label for="lastName">Last name</label>
-            <input type="text" value="" id="lastName" placeholder="Smith">
-          </div>
-          <div class="input-group email-address">
-            <label for="emailAddress">Email address</label>
-            <input type="text" value="" id="emailAddress" placeholder="john@email.com">
-          </div>
-          <div class="input-group phone-number">
-            <label for="phoneNumber">Phone number</label>
-            <input type="text" value="" id="phoneNumber" placeholder="+44">
-          </div>
-          <div class="input-group shipping-address">
-            <label for="shippingAddress">Shipping address</label>
-            <input type="text" value="" id="shippingAddress" placeholder="Start typing your address">
-          </div>
-          <div class="select-group keep-update">
-            <input type="checkbox" value="" id="keepUpdated">
-            <label for="keepUpdated" class="title">Keep me updated on special offers</label>
-          </div>
-        </div>
-      </div>
-      <div class="shipping-method form-section">
-        <h2 class="section-title">Shipping Method</h2>
-        <div class="input-radio">
-          <div class="radio-group free">
-            <div class="radio-wrap">
-              <input name="shipping-method" type="radio" value="free-shipping" id="freeShipping" name="free-shipping"
-                checked>
-              <label for="freeShipping" class="title">Free Shipping</label>
-            </div>
-            <div class="label">Free</div>
-          </div>
-          <div class="radio-group fed-ex">
-            <div class="radio-wrap">
-              <input name="shipping-method" type="radio" value="fed-ex" id="fedEx">
-              <label for="fedEx" class="title">FedEx Express Shipping</label>
-            </div>
-            <div class="label">£5.00</div>
-          </div>
-        </div>
-      </div>
-      <div class="bill-details form-section">
-        <h2 class="section-title">Billing Details</h2>
-        <div class="input-radio">
-          <div class="radio-group sameAsShip">
-            <div class="radio-wrap">
-              <input name="billing-details" type="radio" value="same-as-shipping" id="sameAsShipping" checked>
-              <label for="sameAsShipping" class="title">Same as shipping details</label>
-            </div>
-          </div>
-          <div class="radio-group useDifferent">
-            <div class="radio-wrap">
-              <input name="billing-details" type="radio" value="use-different" id="useDifferent">
-              <label for="useDifferent" class="title">Use a different billing address</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-section">
-        <div class="payment-method">
-          <h2 class="section-title">Payment method</h2>
-          <div class="input-radio">
-            <div class="radio-group credit-card">
-              <div class="radio-wrap">
-                <input name="payment-method" type="radio" value="credit-card" id="creditCard" checked>
-                <label for="creditCard" class="title">Credit card</label>
-              </div>
-              <div class="card-icons">
-                <img src="./image/logo/visa-bw.png" alt="visa card icon">
-                <img src="./image/logo/mastercard-bw.png" alt="master card icon">
-              </div>
-            </div>
-            <div class="card-info-wrap">
-              <div class="input-group card-input-group card-number">
-                <input type="number" placeholder="Card number" value="number" name="card-number">
-                <img src="./image/logo/card-number-icon.png" alt="card number icon">
-              </div>
-              <div class="input-group card-input-group card-date">
-                <img src="./image/logo/card-date-icon.png" alt="card date icon">
-                <input type="number" placeholder="MM" value="number" name="card-month" class="card-date-month">
-                <input type="number" placeholder="YYYY" value="number" name="card-year" class="card-date-year">
-              </div>
-              <div class="input-group card-input-group card-cvv">
-                <input type="number" placeholder="CVV" value="" name="cvv-number">
-                <img src="./image/logo/card-cvv-icon.png" alt="card number icon">
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="submit">
-          <p class="privacy-policy title">"By clicking “Complete Secure Purchase” below,
-            I agree to the Terms of Sale and Privacy Policy.</p>
-          <button class="submit-btn" type="submit">Complete Secure Purchase</button>
-          <p class="security">
-            <img class="icon" src="./image/logo/lock-icon.png" alt="Lock icon">
-            Safe transactions guaranteed, secured over SSL
-          </p>
-        </div>
-        <div class="reviews">
-          <div class="trustpilot card">
-            <img src="./image/logo/trust-pilot.png" alt="trust pilot icon">
-            <div class="trustpilot-info">
-              <h3>Rated Excellent</h3>
-              <p>with <span class="review-count">14,382</span> positive reviews on TrustPilot</p>
-            </div>
-          </div>
-          <div aria-labelledby="carousel-heading" class="customer-reviews">
-            <div class="review-header">
-              <h2>Customer Reviews</h2>
-              <div class="slider-btns">
-                <button class="prev-btn">
-                  <img src="./image/logo/prev-icon.png" alt="prev btn icon">
-                </button>
-                <button class="next-btn">
-                  <img src="./image/logo/next-icon.png" alt="next btn icon">
-                </button>
-              </div>
-            </div>
-            <div class="review-body">
-              <div class="review-sliders">
-                <div class="card review-slide">
-                  <div class="star-list">
-                    <div class="stars">
-                      <img src="./image/logo/stars.png" alt="star icon">
-                    </div>
-                    <div class="stars">
-                      <img src="./image/logo/stars.png" alt="star icon">
-                    </div>
-                    <div class="stars">
-                      <img src="./image/logo/stars.png" alt="star icon">
-                    </div>
-                    <div class="stars">
-                      <img src="./image/logo/stars.png" alt="star icon">
-                    </div>
-                    <div class="stars">
-                      <img src="./image/logo/stars.png" alt="star icon">
-                    </div>
+          <div class="accordion-body">
+            <div class="product-list">
+              <!-- product item  -->
+              <div class="product-item">
+                <div class="product-img">
+                  <div class="product-badge">2</div>
+                  <div class="img-wrap">
+                    <img src="./image/products/product-image.png" alt="monochrome tracksuit">
                   </div>
-                  <p class="review-text">
-                    “30-day Satisfaction guarantee with Money Back
-                    If you're not satisfied with your products we will issue a full refund, no questions asked.”
-                  </p>
-                  <div class="review-owner">
-                    <h4>John Smith</h4>
-                    <div class="verified">
-                      <img src="./image/logo/review-check-mark.png" alt="check mark icon">
-                      Verified review
-                    </div>
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <h3>Monochrome Tracksuit</h3>
+                    <p>XS / Pink</p>
+                  </div>
+                  <div class="product-price">
+                    <p>£19.95</p>
+                    <h3>£17.95</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-img">
+                  <div class="product-badge">2</div>
+                  <div class="img-wrap">
+                    <img src="./image/products/product-image.png" alt="monochrome tracksuit">
+                  </div>
+                </div>
+                <div class="product-details">
+                  <div class="product-info">
+                    <h3>Monochrome Tracksuit</h3>
+                    <p>XS / Pink</p>
+                  </div>
+                  <div class="product-price">
+                    <p>£19.95</p>
+                    <h3>£17.95</h3>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="coupon-code">
+              <input type="text" class="coupon-field" placeholder="Discount code or gift card">
+              <button class="apply-btn " type="button">Apply</button>
+            </div>
+            <div class="summary">
+              <div class="summary-item">
+                <p>Subtotal</p>
+                <h3>£35.90</h3>
+              </div>
+              <div class="summary-item saving-item">
+                <p>Savings</p>
+                <h3>-£XX.XX</h3>
+              </div>
+              <div class="summary-item">
+                <p>Shipping</p>
+                <h3>FREE</h3>
+              </div>
+              <div class="summary-item sales-tax">
+                <p>Sales tax</p>
+                <h3>£0.00</h3>
+              </div>
+              <div class="summary-item total-item">
+                <h1>Total</h1>
+                <div class="total-info">
+                  <p>GBP</p>
+                  <h1>£35.90</h1>
+                </div>
+              </div>
+
+            </div>
+            <div class="gurantee">
+              <div class="gurantee-item">
+                <div class="gurantee-img">
+                  <img src="./image/logo/lifetime.png" alt="lifetime logo">
+                </div>
+                <div class="gurantee-info">
+                  <h3>Lifetime Guarantee</h3>
+                  <p>At our company, we take great pride in the quality of our products. That's why we confidently offer
+                    a
+                    lifetime year warranty on all our items.</p>
+                </div>
+              </div>
+              <div class="gurantee-item">
+                <div class="gurantee-img">
+                  <img src="./image/logo/30-days-satisfaction.png" alt="30 days satisfaction logo">
+                </div>
+                <div class="gurantee-info">
+                  <h3>Lifetime Guarantee</h3>
+                  <p>At our company, we take great pride in the quality of our products. That's why we confidently offer
+                    a
+                    lifetime year warranty on all our items.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </form>
-  </aside>
+    </aside>
+    <!-- user input forms  -->
+    <aside class="checkout-container">
+      <div class="container">
+        <form class="details-form">
+          <div class="shipping-details form-section">
+            <h2 class="section-title">Shipping details</h2>
+            <div class="input-lists">
+              <div class="input-group first-name">
+                <label for="firstName">First name</label>
+                <input type="text" value="" id="firstName" placeholder="John">
+              </div>
+              <div class="input-group last-name">
+                <label for="lastName">Last name</label>
+                <input type="text" value="" id="lastName" placeholder="Smith">
+              </div>
+              <div class="input-group email-address">
+                <label for="emailAddress">Email address</label>
+                <input type="text" value="" id="emailAddress" placeholder="john@email.com">
+              </div>
+              <div class="input-group phone-number">
+                <label for="phoneNumber">Phone number</label>
+                <input type="text" value="" id="phoneNumber" placeholder="+44">
+              </div>
+              <div class="input-group shipping-address">
+                <label for="shippingAddress">Shipping address</label>
+                <input type="text" value="" id="shippingAddress" placeholder="Start typing your address">
+              </div>
+              <div class="select-group keep-update">
+                <input type="checkbox" value="" id="keepUpdated">
+                <label for="keepUpdated" class="title">Keep me updated on special offers</label>
+              </div>
+            </div>
+          </div>
+          <div class="shipping-method form-section">
+            <h2 class="section-title">Shipping Method</h2>
+            <div class="input-radio">
+              <div class="radio-group free">
+                <div class="radio-wrap">
+                  <input name="shipping-method" type="radio" value="free-shipping" id="freeShipping"
+                    name="free-shipping" checked>
+                  <label for="freeShipping" class="title">Free Shipping</label>
+                </div>
+                <div class="label">Free</div>
+              </div>
+              <div class="radio-group fed-ex">
+                <div class="radio-wrap">
+                  <input name="shipping-method" type="radio" value="fed-ex" id="fedEx">
+                  <label for="fedEx" class="title">FedEx Express Shipping</label>
+                </div>
+                <div class="label">£5.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="bill-details form-section">
+            <h2 class="section-title">Billing Details</h2>
+            <div class="input-radio">
+              <div class="radio-group sameAsShip">
+                <div class="radio-wrap">
+                  <input name="billing-details" type="radio" value="same-as-shipping" id="sameAsShipping" checked>
+                  <label for="sameAsShipping" class="title">Same as shipping details</label>
+                </div>
+              </div>
+              <div class="radio-group useDifferent">
+                <div class="radio-wrap">
+                  <input name="billing-details" type="radio" value="use-different" id="useDifferent">
+                  <label for="useDifferent" class="title">Use a different billing address</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-method form-section">
+            <div class="card-payment">
+              <h2 class="section-title">Payment method</h2>
+              <div class="input-radio">
+                <div class="radio-group credit-card">
+                  <div class="radio-wrap">
+                    <input name="payment-method" type="radio" value="credit-card" id="creditCard" checked>
+                    <label for="creditCard" class="title">Credit card</label>
+                  </div>
+                  <div class="card-icons">
+                    <img src="./image/logo/visa-bw.png" alt="visa card icon">
+                    <img src="./image/logo/mastercard-bw.png" alt="master card icon">
+                  </div>
+                </div>
+                <div class="card-info-wrap">
+                  <div class="input-group card-input-group card-number">
+                    <input type="number" placeholder="Card number" value="number" name="card-number">
+                    <img src="./image/logo/card-number-icon.png" alt="card number icon">
+                  </div>
+                  <div class="input-group card-input-group card-date">
+                    <img src="./image/logo/card-date-icon.png" alt="card date icon">
+                    <input type="number" placeholder="MM" value="number" name="card-month" class="card-date-month">
+                    <input type="number" placeholder="YYYY" value="number" name="card-year" class="card-date-year">
+                  </div>
+                  <div class="input-group card-input-group card-cvv">
+                    <input type="number" placeholder="CVV" value="" name="cvv-number">
+                    <img src="./image/logo/card-cvv-icon.png" alt="card number icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="submit">
+              <p class="privacy-policy title">"By clicking “Complete Secure Purchase” below,
+                I agree to the Terms of Sale and Privacy Policy.</p>
+              <button class="submit-btn" type="submit">Complete Secure Purchase</button>
+              <p class="security">
+                <img class="icon" src="./image/logo/lock-icon.png" alt="Lock icon">
+                Safe transactions guaranteed, secured over SSL
+              </p>
+            </div>
+            <div class="reviews">
+              <div class="trustpilot card">
+                <img src="./image/logo/trust-pilot.png" alt="trust pilot icon">
+                <div class="trustpilot-info">
+                  <h3>Rated Excellent</h3>
+                  <p>with <span class="review-count">14,382</span> positive reviews on TrustPilot</p>
+                </div>
+              </div>
+              <div aria-labelledby="carousel-heading" class="customer-reviews">
+                <div class="review-header">
+                  <h2>Customer Reviews</h2>
+                  <div class="slider-btns">
+                    <button class="prev-btn">
+                      <img src="./image/logo/prev-icon.png" alt="prev btn icon">
+                    </button>
+                    <button class="next-btn">
+                      <img src="./image/logo/next-icon.png" alt="next btn icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="review-body">
+                  <div class="review-sliders">
+                    <div class="card review-slide">
+                      <div class="star-list">
+                        <div class="stars">
+                          <img src="./image/logo/stars.png" alt="star icon">
+                        </div>
+                        <div class="stars">
+                          <img src="./image/logo/stars.png" alt="star icon">
+                        </div>
+                        <div class="stars">
+                          <img src="./image/logo/stars.png" alt="star icon">
+                        </div>
+                        <div class="stars">
+                          <img src="./image/logo/stars.png" alt="star icon">
+                        </div>
+                        <div class="stars">
+                          <img src="./image/logo/stars.png" alt="star icon">
+                        </div>
+                      </div>
+                      <p class="review-text">
+                        “30-day Satisfaction guarantee with Money Back
+                        If you're not satisfied with your products we will issue a full refund, no questions asked.”
+                      </p>
+                      <div class="review-owner">
+                        <h4>John Smith</h4>
+                        <div class="verified">
+                          <img src="./image/logo/review-check-mark.png" alt="check mark icon">
+                          Verified review
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </aside>
+  </div>
+
   <!-- slider  -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
