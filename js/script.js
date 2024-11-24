@@ -1,24 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper("#customer-review-slider", {
+  const configration = {
     // Optional parameters
     direction: "horizontal",
     loop: true,
     autoHeight: true,
-
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: ".next-btn",
       prevEl: ".prev-btn",
     },
+  };
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
+
+  const LargeSlider = new Swiper("#customer-review-slider", configration);
+  const SmallSlider = new Swiper("#review-slider-sm", configration);
 });
