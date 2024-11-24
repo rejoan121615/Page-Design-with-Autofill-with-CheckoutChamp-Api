@@ -548,6 +548,85 @@ aside {
     margin-top: 0px;
   }
 
+  .order-reserved {
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    margin-bottom: 15px;
+    @include resp($lg) {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 25px 30px;
+     column-gap: 15px;
+     border-radius: 5px;
+    }
+    @include resp($xl) {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23.44px;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15.62px;
+      margin-bottom: 17px;
+       span {
+        font-weight: 700;
+       }
+    }
+
+    .reserve-info {
+      @include resp($lg) {
+        flex: 1;
+      }
+    }
+
+    .timer {
+      @extend %flex;
+      justify-content: flex-start;
+      column-gap: 10px;
+      .count {
+        width: 50px;
+        height: 55px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #FFF;
+        color: #000;
+        @include resp($lg) {
+          height: 65px;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 26.04px;
+          @include resp($lg) {
+            font-size: 24px;
+            line-height: 31px;
+          }
+        }
+        p {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 14.32px;
+          margin-bottom: 0px;
+          @include resp($lg) {
+            font-size: 13px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+
   .form-section {
     background-color: white;
     padding: 25px 20px;
