@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const accordionBody = accordionElement.querySelector(".accordion-body");
   var bodyHeight = accordionBody.offsetHeight;
 
-
   function RegisterAccordion() {
     if (accordionElement) {
       const accordionBtn = accordionHead.querySelector("button");
@@ -39,32 +38,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("resize", RegisterAccordion);
 
-  // reverse timer 
-  let totalSeconds = 14 * 60 + 58; 
+  // reverse timer
+  const bookingTimer = document.querySelector("#booking-timer");
 
-  function updateTimer() {
-    const bookingTimer = document.querySelector("#booking-timer");
-    const hoursElement = bookingTimer.querySelector('.hours h2');
-    const minutesElement = bookingTimer.querySelector('.munis h2');
-    const secondsElement = bookingTimer.querySelector('.secs h2');
+  if (bookingTimer) {
+    let totalSeconds = 14 * 60 + 58;
+    function updateTimer() {
+      const hoursElement = bookingTimer.querySelector(".hours h2");
+      const minutesElement = bookingTimer.querySelector(".munis h2");
+      const secondsElement = bookingTimer.querySelector(".secs h2");
 
-    const hours = Math.floor(totalSeconds / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-    const seconds = totalSeconds % 60;
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
 
-    hoursElement.textContent = hours.toString().padStart(2, '0');
-    minutesElement.textContent = minutes.toString().padStart(2, '0');
-    secondsElement.textContent = seconds.toString().padStart(2, '0');
+      hoursElement.textContent = hours.toString().padStart(2, "0");
+      minutesElement.textContent = minutes.toString().padStart(2, "0");
+      secondsElement.textContent = seconds.toString().padStart(2, "0");
 
-    if (totalSeconds <= 0) {
-      clearInterval(timerInterval);
+      if (totalSeconds <= 0) {
+        clearInterval(timerInterval);
+      }
+
+      totalSeconds--;
     }
 
-    totalSeconds--;
+    const timerInterval = setInterval(updateTimer, 1000);
+    updateTimer();
   }
-
-  const timerInterval = setInterval(updateTimer, 1000);
-  updateTimer();
-
-
 });
