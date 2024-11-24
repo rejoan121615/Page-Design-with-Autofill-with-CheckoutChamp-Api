@@ -257,12 +257,37 @@ aside {
       background-color: transparent;
       border: none;
       padding: 0;
+      transform: rotate(180deg);
+      // transition: transform 0.5s;
       @include resp($xl) {
         display: none;
       }
       img {
         width: 12px;
       }
+    }
+  }
+
+  // accordion
+
+  .accordion-body {
+    padding-top: 5px;
+    display: none;
+    @include resp($lg) {
+      padding-top: 30px;
+    }
+    .product-list {
+    }
+  }
+
+  &.show {
+    .accordion-head {
+      button {
+        transform: rotate(0deg);
+      }
+    }
+    .accordion-body {
+      display: block;
     }
   }
 }
@@ -286,17 +311,6 @@ aside {
     @include resp($xl) {
       width: 100%;
       max-width: 420px;
-    }
-  }
-
-  // accordion
-
-  .accordion-body {
-    padding-top: 5px;
-    @include resp($lg) {
-      padding-top: 30px;
-    }
-    .product-list {
     }
   }
 
